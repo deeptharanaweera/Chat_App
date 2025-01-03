@@ -1,8 +1,8 @@
-<h1 align="center">Chat App</h1>
-<h3 align="center">Hi 👋, I'm Deeptha Ranaweera.This is one create using ionic framework with Angular</h3>
-<img align="right" alt="coding" width="500" src="Untitledvideo-MadewithClipchamp-ezgif.com-video-to-gif-converter.gif">
+<h1 align="center">Chat App </h1>
+<h3 align="center">Hi 👋, I'm Deeptha Ranaweera.I create this using ionic framework with Angular</h3>
+<img align="right" alt="coding" width="500" src="Screenshot 2024-07-05 162541.png">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=deeptharanaweera&label=Profile%20views&color=0e75b6&style=flat" alt="deeptha99" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=deeptha99&label=Profile%20views&color=0e75b6&style=flat" alt="deeptha99" /> </p>
 
 <p align="left"> 
   <a href="https://www.linkedin.com/in/deeptha-ranaweera-98b026203" target="_blank">
@@ -13,7 +13,7 @@
 
 - 📫 How to reach me **deeptharanaweera26@gmail.com**
 
-- 👨‍💻 All of my projects are available at [https://github.com/deeptharanaweera?tab=repositories](https://github.com/deeptharanaweera?tab=repositories)
+- 👨‍💻 All of my projects are available at [https://github.com/Deeptha99?tab=repositories](https://github.com/Deeptha99?tab=repositories)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
