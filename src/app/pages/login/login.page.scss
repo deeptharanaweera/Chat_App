@@ -1,0 +1,43 @@
+div.logo {
+    margin: 5vh 0 2vh 0;
+    ion-img {
+        height: 20vh;
+        margin-bottom: 0;
+        /* Adjust the logo size */
+    }
+    ion-text {
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+}
+
+ion-card {
+    ion-input {
+        font-size: 1rem;
+
+        ion-icon {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* Space between text and button */
+    margin-bottom: 10px;
+    /* Adjust bottom margin if needed */
+}
+
+.footer-content ion-text {
+    font-size: 0.8rem;
+}
+
+.footer-content ion-button {
+    --padding-start: 0;
+    text-transform: none;
+    font-size: 0.8rem;
+    /* Match the text size */
+}

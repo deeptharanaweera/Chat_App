@@ -1,0 +1,28 @@
+ion-header {
+    ion-toolbar {
+        --background: white;
+    }
+}
+div.logo {
+    margin: 5vh 0 2vh 0;
+    ion-img {
+        height: 15vh;
+        margin-bottom: 0;
+        /* Adjust the logo size */
+    }
+    ion-text {
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+}
+
+ion-card {
+    ion-input {
+        font-size: 1rem;
+
+        ion-icon {
+            font-size: 1.2rem;
+        }
+    }
+}
+

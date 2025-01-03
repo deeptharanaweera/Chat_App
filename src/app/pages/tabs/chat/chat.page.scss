@@ -1,0 +1,29 @@
+ion-footer {
+    ion-toolbar {
+        padding: 0;
+
+        ion-button {}
+
+        ion-textarea {
+            border: 1px solid var(--ion-color-medium);
+            border-radius: 20px;
+            margin: 0.5vh 1vh 0.5vh 0;
+        }
+    }
+
+}
+ion-content {
+    --background: none; /* Remove default background */
+  background-image: url('../../../../assets/background/8c98994518b575bfd8c949e91d20548b.jpg'); /* Add your image path */
+  background-size: cover; /* Scale image to cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+    ion-list {
+        background: transparent;
+        margin-bottom: 5vh;
+    }
+
+}
+
+
+  

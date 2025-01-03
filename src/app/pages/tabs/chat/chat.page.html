@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/chats" color="medium"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{ name() }}</ion-title>
+
+    <ion-buttons slot="end">
+      <!-- Call Icon -->
+      <ion-button>
+        <ion-icon slot="icon-only" name="call-outline" color="medium"></ion-icon>
+      </ion-button>
+
+      <!-- Video Call Icon -->
+      <ion-button>
+        <ion-icon slot="icon-only" name="videocam-outline" color="medium"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  @let chatsArray = chats();
+  @if(chatsArray && chatsArray?.length! > 0) {
+  <ion-list>
+    @for(chat of chatsArray; track $index) {
+    <app-chat-box [chat]="chat"></app-chat-box>
+    }
+  </ion-list>
+  } @else {
+  <app-empty-screen [model]="model"></app-empty-screen>
+  }
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-textarea
+      autoGrow
+      rows="1"
+      placeholder="Send Message"
+      class="ion-text-center"
+      [(ngModel)]="message"
+    >
+    </ion-textarea>
+
+    @if(isLoading()) {
+      <ion-button slot="end" size="large">
+        <ion-spinner name="crescent"></ion-spinner>
+      </ion-button>
+    } @else {
+      <ion-button slot="end" size="large" (click)="sendMessage()">
+      <ion-icon slot="icon-only" name="send"></ion-icon>
+    </ion-button>
+    }
+    
+    </ion-item>
+    
+  </ion-toolbar>
+</ion-footer>

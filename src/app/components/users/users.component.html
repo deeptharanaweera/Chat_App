@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="dark">
+      New Chat
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button color="dark" (click)="closeModal()">
+        <ion-icon name="arrow-back" >
+          
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  @if(users()){
+    <ion-list  lines="none">
+    @for(user of users(); track $index) {
+      <ion-item color="tertiary" (click)="startChat(user)">
+        <ion-avatar slot="start">
+          <ion-img [src]="user?.photo"/>
+        </ion-avatar>
+  
+        <ion-label>
+          {{ user?.name }}
+        </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+  }
+  
+</ion-content>

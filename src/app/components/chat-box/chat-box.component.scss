@@ -1,0 +1,96 @@
+ion-item {
+    --background: transparent;
+    --padding-start: 8px;
+    --padding-end: 0;
+    --ion-safe-area-left: 0;
+    --ion-safe-area-right: 0;
+    --min-height: 32px;
+    --border-width: 0;
+    .container {
+        position: relative;
+        max-width: 70%;
+        border-radius: 5px;
+        padding: 5px 8px;
+        margin-top: 12px;
+        margin-right: 12px;
+        margin-left: 12px;
+
+        ion-text {
+            font-size: 0.9rem;
+            font-weight: 400;
+            &::after {
+                content: "";
+                width: 70px;
+                display: inline-block;
+                visibility: hidden;
+                font-size: 0.75rem;
+            }
+            // padding: 0.5vh 1vh;
+            // border-radius: 20px;
+            // background-color: var(--ion-color-medium);
+            // color: var(--ion-color-dark);
+            // margin: 0.5vh 1vh 0.5vh 0;
+        }
+
+        ion-note {
+            padding: 4px 8px 4px 4px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            line-height: 16px;
+            ion-icon {
+                font-size: 16px;
+            }
+            small {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+.otherUser {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: -4px;
+        border-bottom: 9px solid var(--ion-color-light);
+        height: 30px;
+        width: 15px;
+        transform: rotate(290deg);
+        border-radius: 0 20px 0;
+}
+    .container {
+        background-color: var(--ion-color-light);
+        ion-note {
+            color: gray;
+        }
+    }
+}
+
+.currentUser {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        right: -4px;
+        border-bottom: 9px solid var(--ion-color-dark);
+        height: 30px;
+        width: 15px;
+        transform: rotate(70deg);
+        border-radius: 20px 0;
+        -webkit-transform: rotate(70deg);
+        -moz-transform: rotate(70deg);
+        -ms-transform: rotate(70deg);
+        -o-transform: rotate(70deg);
+}
+    .container {
+        background-color: var(--ion-color-dark);
+        color: white;
+        ion-note {
+            color: rgba(204, 201, 201, 0.88);
+        }
+    }
+}
+
